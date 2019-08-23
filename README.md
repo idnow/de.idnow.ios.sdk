@@ -1,11 +1,11 @@
 # IDnowCoreSDK framework
 
-The IDnow framework can be used in incooperate the IDnow AutoIdent platform into iOS Objective C or Swift apps.
+The IDnow framework can be used to incorporate the IDnow AutoIdent platform into iOS Objective C or Swift apps.
 The framework itself contains `armv7` and `arm64` architectures. Since Apple does not allow to include not used architectures  into an app this framework does not include the simulator architectures. If these are needed for development purposes please contact IDnow.
 
 ### Dependencies
 
-The IDnow framework depends on the presence of several other frameworks. The current build tool used is `cocoapods`. That means in order build an app using the framework it is neccessary to add a podfile to the toplevel folder of your app project. This is the Podfile used to build the current
+The IDnow framework depends on the presence of several other frameworks. The current build tool used is `cocoapods`. That means in order to build an app using the framework it is necessary to add a podfile to the top-level folder of your app project. This is the Podfile used to build the current
 IDnow AutoIdent iOS app:
 
 ```
@@ -40,17 +40,18 @@ The API to start an automated Ident is:
 public func start(token: String, preferredLanguage: String = default, fromViewController: UIViewController, listener: @escaping IDNowSDKResultListener)
 ```
 
-* the token needs to be all uppercase chararcter only and should conform to the following regular expression  `.{3}-.{5}$`
-* setting the prefferedLanguage (optional) tells the SDK in which language the AutoIdent UI should be shown. If the language is not available the framework first tries the devices language and if that is not available it falls back to english.
+* the token needs to be all uppercase character only and should conform to the following regular expression  `.{3}-.{5}$`
+* setting the prefferedLanguage (optional) tells the SDK in which language the AutoIdent UI should be shown. If the language is not available the framework first tries the language of the device and if that is not available it falls back to English.
 * the calling view controller
 * an IDnowResultListener which gets called once the SDK returns. The possible return codes are:
 ** FINISHED the ident was finished
-** CANCELLED the user canceld the ident
-** ERROR an error occured (e.g. wrong token format, token invalid or incorrect, no internet connection)
+** CANCELLED the user cancelled the ident
+** ERROR an error occurred (e.g. wrong token format, token invalid or incorrect, no internet connection)
 
 ### Usage example
 
-swift
+Swift
+
 ```
 IDNowSDK.shared.start(token: tokenTextField!.text!, fromViewController: self, listener:
 { (result: IDNowSDK.IdentResult, message: String) in
@@ -65,7 +66,9 @@ self.showAlert(text: message)
 }
 }
 ```
-ObjectivC
+
+Objective-C
+
 ```
 IDNowSDK* sdk = [[IDNowSDK alloc] init];
 
