@@ -36,7 +36,7 @@ end
 * Create Cartfile 
 * Add the following to Cartfile : 
 ```
-github "bilelselmi/SDK5" "3.10.0"
+github "idnow/de.idnow.ios.sdk" "3.10.0"
 github "Alamofire/Alamofire" >= 4.7
 github "getsentry/sentry-cocoa" "4.1.0"
 
