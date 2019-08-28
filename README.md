@@ -3,10 +3,12 @@
 The IDnow framework can be used to incorporate the IDnow AutoIdent platform into iOS Objective C or Swift apps.
 The framework itself contains `armv7` and `arm64` architectures. Since Apple does not allow to include not used architectures  into an app this framework does not include the simulator architectures. If these are needed for development purposes please contact IDnow.
 
-### Dependencies
+## Installation
 
-The IDnow framework depends on the presence of several other frameworks. The current build tool used is `cocoapods`. That means in order to build an app using the framework it is necessary to add a podfile to the top-level folder of your app project. This is the Podfile used to build the current
-IDnow AutoIdent iOS app:
+### CocoaPods 
+
+The IDnow framework depends on the presence of several other frameworks. The current build tool used is `cocoapods`. That means in order to build an app using the framework it is necessary to add a podfile to the top-level folder of your app project. 
+#### Podfile used to build the current Dnow AutoIdent iOS app:
 
 ```
 workspace 'AutoIdent.xcworkspace'
@@ -21,13 +23,57 @@ pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '
 end
 ```
 
-### Using the framework
+#### Using the framework
 
 * Put IDNowSDKCore.Framework in the app folder 
 * XCode -> Target -> General -> Embedded Frameworks and Libraries -> Add IDNowSDKCore.Framework
 * Insert SDK calling code in your app 
 * Add NSCameraUsageDescription and NSPhotoLibraryUsageDescription keys in your app's .plist file 
 * Compile & Run
+
+### Carthage 
+
+* Create Cartfile 
+* Add the following to Cartfile : 
+```
+github "bilelselmi/SDK5" "3.10.0"
+github "Alamofire/Alamofire" >= 4.7
+github "getsentry/sentry-cocoa" "4.1.0"
+
+```
+* Run carthage update --platform iOS
+
+* Drag the Frameworks needed (IDNowSDKCore.framework/ Alamofire.framework / Sentry.framework) from the Carthage/Build/iOS subfolder to ‘Linked Frameworks and Libraries’ (Target configuration -> General tab)
+
+* Make sure that under Build Settings that Framework Search Path includes $(PROJECT_DIR)/Carthage/Build/iOS 
+
+* Under Buid Phases tab, add a new Run Script Phase
+
+* In the Shell text field, type : /usr/local/bin/carthage copy-frameworks
+
+* Under Input Files add : 
+```
+$(SRCROOT)/Carthage/Build/iOS/IDNowSDKCore.framework
+$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework
+$(SRCROOT)/Carthage/Build/iOS/Sentry.framework
+
+```  
+* Check the (Run Script only when installing)
+
+* Under Buid Phases tab, add a new Copy Files Phase
+
+* For destination select Frameworks
+
+* Drop the frameworks in the drop target, Make sure that Copy items if needed is checked, and also Code Sign On Copy is checked
+
+* Add NSCameraUsageDescription and NSPhotoLibraryUsageDescription keys in your app's .plist file 
+
+* Insert SDK calling code in your app
+
+* Compile & Run
+
+
+## Usage
 
 ### Starting an automated ident
 
