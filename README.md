@@ -8,7 +8,7 @@ The framework itself contains `armv7` and `arm64` architectures. Since Apple doe
 ### CocoaPods 
 
 The IDnow framework depends on the presence of several other frameworks. The current build tool used is `cocoapods`. That means in order to build an app using the framework it is necessary to add a podfile to the top-level folder of your app project. 
-#### Podfile used to build the current Dnow AutoIdent iOS app:
+#### Podfile used to build the current IDnow AutoIdent iOS app:
 
 ```
 workspace 'AutoIdent.xcworkspace'
