@@ -37,7 +37,7 @@ end
 * Add the following to Cartfile : 
 ```
 github "idnow/de.idnow.ios.sdk" "3.10.0"
-github "Alamofire/Alamofire" >= 4.7
+github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
 
 ```
