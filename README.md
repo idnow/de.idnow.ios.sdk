@@ -20,18 +20,18 @@ The framework itself contains `armv7` and `arm64` architectures. Since Apple doe
 ### 3.11.0  
 Changes:
 - User can continue with identification process after the app has been put to the background
-- User can finish the process of identification with any country's identity document
+- Global document : User can finish the process of identification with any country's identity document
 - Minor improvements & bugfixes
 
 ### 3.10.0  
 Changes:
-- UI Improvements
+- UI Improvements 
 - Minor improvements & bugfixes
 
 ### 3.9.0  
 Changes:
 - Randomness in liveness detection
-- Autoclassfication is now supported for 19 more documents
+- Autoclassfication is supported for 19 more documents
 - Minor improvements & bugfixes
 
 
