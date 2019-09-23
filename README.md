@@ -1,7 +1,44 @@
-# IDnowCoreSDK framework
+# Table of Contents
+- [IDnowCoreSDK framework](#IDnowCoreSDK-framework)
+- [Changelog](#changelog)
+- [Installation](#installation)
+  - [CocoaPods](#CocoaPods)
+  - [Carthage ](#Carthage )
+- [Usage](#Usage)
+- [Usage example](#Usage-example)
+
+
+
+
+## IDnowCoreSDK framework
 
 The IDnow framework can be used to incorporate the IDnow AutoIdent platform into iOS Objective C or Swift apps.
 The framework itself contains `armv7` and `arm64` architectures. Since Apple does not allow to include not used architectures  into an app this framework does not include the simulator architectures. If these are needed for development purposes please contact IDnow.
+
+## Changelog
+
+### 3.11.0  11.09.2019
+Changes:
+- User can continue with identification process after the app has been put to the background
+- User can finish the process of identification with any country's identity document
+- Minor improvements & bugfixes
+
+### 3.10.0  16.08.2019
+Changes:
+- UI Improvements
+- Minor improvements & bugfixes
+
+### 3.9.0  31.07.2019
+Changes:
+- Randomness in liveness detection
+- Autoclassfication is now supported for 19 more documents
+- Minor improvements & bugfixes
+
+
+### 3.8.0  17.06.2019
+Changes:
+- Improvement in the text in English, German, French, Polish and Spanish
+- Minor improvements & bugfixes
 
 ## Installation
 
@@ -18,8 +55,12 @@ use_frameworks!
 target 'AutoIdent' do
 platform :ios, '10.0'
 pod 'Alamofire', '~> 4.7', :inhibit_warnings => true
+pod 'AlamofireLogger'
+pod 'Starscream', '~> 3.0.2'
+pod 'SwiftMsgPack', '~> 1.0.0'
 pod 'OpenCV2', '~> 3.4.1'
 pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '4.1.0'
+pod 'lottie-ios'
 end
 ```
 
@@ -130,6 +171,7 @@ if( result == IdentResultFINISHED ) {
 [sdk startWithToken:@"INTERNAL_TOKEN" preferredLanguage:@"en" fromViewController:self listener:idnowResultListener];
 
 ```
+
 
 
 
