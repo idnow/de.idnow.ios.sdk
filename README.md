@@ -160,11 +160,11 @@ Changes:
 ### 3.10.0  
 Changes:
 - UI Improvements :
- - Added spinner for results verification screen
- - Terms and Condition page layout adjustements
- - Analyzing screen improvements
- - Changes in the intro screen alignment
- - Changes in the instruction screen alignment
+   - Added spinner for results verification screen
+   - Terms and Condition page layout adjustements
+   - Analyzing screen improvements
+   - Changes in the intro screen alignment
+   - Changes in the instruction screen alignment
 
 - Minor improvements & bugfixes
 
