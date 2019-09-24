@@ -1,11 +1,11 @@
 # Table of Contents
 - [IDnowCoreSDK framework](#IDnowCoreSDK-framework)
-- [Changelog](#changelog)
 - [Installation](#installation)
   - [CocoaPods](#CocoaPods)
   - [Carthage ](#Carthage )
 - [Usage](#Usage)
 - [Usage example](#Usage-example)
+- [Changelog](#changelog)
 
 
 
@@ -15,30 +15,7 @@
 The IDnow framework can be used to incorporate the IDnow AutoIdent platform into iOS Objective C or Swift apps.
 The framework itself contains `armv7` and `arm64` architectures. Since Apple does not allow to include not used architectures  into an app this framework does not include the simulator architectures. If these are needed for development purposes please contact IDnow.
 
-## Changelog
 
-### 3.11.0  
-Changes:
-- User can continue with identification process after the app has been put to the background
-- Global document : User can finish the process of identification with any country's identity document
-- Minor improvements & bugfixes
-
-### 3.10.0  
-Changes:
-- UI Improvements 
-- Minor improvements & bugfixes
-
-### 3.9.0  
-Changes:
-- Randomness in liveness detection
-- Autoclassfication is supported for 19 more documents
-- Minor improvements & bugfixes
-
-
-### 3.8.0  
-Changes:
-- Improvement in the text in English, German, French, Polish and Spanish
-- Minor improvements & bugfixes
 
 ## Installation
 
@@ -171,6 +148,37 @@ if( result == IdentResultFINISHED ) {
 [sdk startWithToken:@"INTERNAL_TOKEN" preferredLanguage:@"en" fromViewController:self listener:idnowResultListener];
 
 ```
+
+## Changelog
+
+### 3.11.0  
+Changes:
+- User can continue with identification process after the app has been put to the background
+- Global document : User can finish the process of identification with any country's identity document
+- Minor improvements & bugfixes
+
+### 3.10.0  
+Changes:
+- UI Improvements :
+ - Added spinner for results verification screen
+ - Terms and Condition page layout adjustements
+ - Analyzing screen improvements
+ - Changes in the intro screen alignment
+ - Changes in the instruction screen alignment
+
+- Minor improvements & bugfixes
+
+### 3.9.0  
+Changes:
+- Randomness in liveness detection
+- Autoclassfication is supported for 19 more documents
+- Minor improvements & bugfixes
+
+
+### 3.8.0  
+Changes:
+- Improvement in the text in English, German, French, Polish and Spanish
+- Minor improvements & bugfixes
 
 
 
