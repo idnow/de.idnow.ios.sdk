@@ -151,6 +151,28 @@ if( result == IdentResultFINISHED ) {
 
 ## Changelog
 
+### 3.13.0  
+Changes:
+-  Feedback to the user during the identification process if : 
+   - the ID document text is not read out correctly by system
+   - the person's photo in the document is not clearly visible
+   
+- Gender readout from MRZ for all documents
+- Minor improvements & bugfixes
+
+### 3.12.0  
+Changes:
+-  Scanning bars added in the app in the following steps :
+   - OCR - Before the segmentation
+   - Security feature - Before the tracking
+   - Selfie - During the selfie-taking process
+   - Liveness - During the picture-taking process
+   
+- Changes in the arrows during the liveness step to ensure that the user understands how to turn head
+- Show date format in OCR review screen based on the device language
+- Minor improvements & bugfixes
+
+
 ### 3.11.0  
 Changes:
 - User can continue with identification process after the app has been put to the background
