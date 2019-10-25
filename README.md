@@ -52,13 +52,21 @@ end
 ### Carthage 
 
 * Create Cartfile 
-* Add the following to Cartfile : 
+* Add the following to Cartfile : (Xcode 10.2)
 ```
 github "idnow/de.idnow.ios.sdk" "3.13.0"
 github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
 
 ```
+* Add the following to Cartfile : (Xcode 11)
+```
+github "idnow/de.idnow.ios.sdk" "3.13.0-Xcode11"
+github "Alamofire/Alamofire" "4.8.2"
+github "getsentry/sentry-cocoa" "4.1.0"
+
+```
+
 * Run carthage update --platform iOS
 
 * Drag the Frameworks needed (IDNowSDKCore.framework/ Alamofire.framework / Sentry.framework) from the Carthage/Build/iOS subfolder to ‘Linked Frameworks and Libraries’ (Target configuration -> General tab)
