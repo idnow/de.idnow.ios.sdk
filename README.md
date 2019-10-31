@@ -51,15 +51,15 @@ end
 
 ### Carthage 
 
-* Create Cartfile 
-* Add the following to Cartfile : (Xcode 10.2)
+* Create a Cartfile 
+* Add the following to the Cartfile : (Xcode 10.2)
 ```
 github "idnow/de.idnow.ios.sdk" "3.13.0"
 github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
 
 ```
-* Add the following to Cartfile : (Xcode 11)
+* Add the following to the Cartfile : (Xcode 11)
 ```
 github "idnow/de.idnow.ios.sdk" "3.13.0-Xcode11"
 github "Alamofire/Alamofire" "4.8.2"
