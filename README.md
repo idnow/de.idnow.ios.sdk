@@ -54,14 +54,21 @@ end
 * Create a Cartfile 
 * Add the following to the Cartfile : (Xcode 10.2)
 ```
-github "idnow/de.idnow.ios.sdk" "3.13.0"
+github "idnow/de.idnow.ios.sdk" "3.14.0-Xcode_10.2"
 github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
 
 ```
-* Add the following to the Cartfile : (Xcode 11)
+* Add the following to the Cartfile : (Xcode 11.1)
 ```
-github "idnow/de.idnow.ios.sdk" "3.13.0-Xcode11"
+github "idnow/de.idnow.ios.sdk" "3.14.0-Xcode_11.1"
+github "Alamofire/Alamofire" "4.8.2"
+github "getsentry/sentry-cocoa" "4.1.0"
+
+```
+* Add the following to the Cartfile : (Xcode 11.2.1) 
+```
+github "idnow/de.idnow.ios.sdk" "3.14.0-Xcode_11.2.1"
 github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
 
