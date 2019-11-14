@@ -159,6 +159,12 @@ if( result == IdentResultFINISHED ) {
 
 ## Changelog
 
+### 3.14.0  
+Changes:
+- Enhanced user experience in liveness detection and security feature steps
+- User feedback for liveness detection
+- Minor improvements & bugfixes
+
 ### 3.13.0  
 Changes:
 -  Feedback to the user during the identification process if : 
