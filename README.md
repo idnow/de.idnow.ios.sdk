@@ -54,21 +54,21 @@ end
 * Create a Cartfile 
 * Add the following to the Cartfile: (Xcode 10.2)
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore.json" "3.14.0-Xcode_10.2"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_10.2.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" ~> 4.9
 github "getsentry/sentry-cocoa" ~> 4.4
 ```
 * Add the following to the Cartfile: (Xcode 11.1)
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore.json" "3.14.0-Xcode_11.1"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.1.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" ~> 4.9
 github "getsentry/sentry-cocoa" ~> 4.4
 ```
 * Add the following to the Cartfile: (Xcode 11.2.1) 
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore.json" "3.14.0-Xcode_11.2.1"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.2.1.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" ~> 4.9
 github "getsentry/sentry-cocoa" ~> 4.4
