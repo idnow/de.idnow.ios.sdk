@@ -52,29 +52,32 @@ end
 ### Carthage 
 
 * Create a Cartfile 
-* Add the following to the Cartfile : (Xcode 10.2)
+* Add the following to the Cartfile: (Xcode 10.2)
 ```
-github "idnow/de.idnow.ios.sdk" "3.14.0-Xcode_10.2"
-github "Alamofire/Alamofire" "4.8.2"
-github "getsentry/sentry-cocoa" "4.1.0"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_10.2.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
+github "Alamofire/Alamofire" ~> 4.9
+github "getsentry/sentry-cocoa" ~> 4.4
+```
+* Add the following to the Cartfile: (Xcode 11.1)
+```
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.1.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
+github "Alamofire/Alamofire" ~> 4.9
+github "getsentry/sentry-cocoa" ~> 4.4
+```
+* Add the following to the Cartfile: (Xcode 11.2.1) 
+```
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.2.1.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
+github "Alamofire/Alamofire" ~> 4.9
+github "getsentry/sentry-cocoa" ~> 4.4
+```
 
+* Run:
 ```
-* Add the following to the Cartfile : (Xcode 11.1)
+carthage update --platform iOS
 ```
-github "idnow/de.idnow.ios.sdk" "3.14.0-Xcode_11.1"
-github "Alamofire/Alamofire" "4.8.2"
-github "getsentry/sentry-cocoa" "4.1.0"
-
-```
-* Add the following to the Cartfile : (Xcode 11.2.1) 
-```
-github "idnow/de.idnow.ios.sdk" "3.14.0-Xcode_11.2.1"
-github "Alamofire/Alamofire" "4.8.2"
-github "getsentry/sentry-cocoa" "4.1.0"
-
-```
-
-* Run carthage update --platform iOS
 
 * Drag the Frameworks needed (IDNowSDKCore.framework/ Alamofire.framework / Sentry.framework) from the Carthage/Build/iOS subfolder to ‘Linked Frameworks and Libraries’ (Target configuration -> General tab)
 
@@ -84,12 +87,11 @@ github "getsentry/sentry-cocoa" "4.1.0"
 
 * In the Shell text field, type : /usr/local/bin/carthage copy-frameworks
 
-* Under Input Files add : 
+* Under Input Files add: 
 ```
 $(SRCROOT)/Carthage/Build/iOS/IDNowSDKCore.framework
 $(SRCROOT)/Carthage/Build/iOS/Alamofire.framework
 $(SRCROOT)/Carthage/Build/iOS/Sentry.framework
-
 ```  
 * Check the (Run Script only when installing)
 
@@ -128,17 +130,9 @@ public func start(token: String, preferredLanguage: String = default, fromViewCo
 Swift
 
 ```
-IDNowSDK.shared.start(token: tokenTextField!.text!, fromViewController: self, listener:
-{ (result: IDNowSDK.IdentResult, message: String) in
-
-print ("SDK finished")
-self.progress.isHidden = true
-self.progress.stopAnimating()
-
-if (result == IDNowSDK.IdentResult.ERROR) 
-{
-self.showAlert(text: message)
-}
+IDNowSDK.shared.start(token: identId, fromViewController: viewController) { (result, message) in
+    print ("IDnow SDK finished with result: \(result)")
+    print ("IDnow SDK message: \(message)")
 }
 ```
 
@@ -147,17 +141,16 @@ Objective-C
 ```
 IDNowSDK* sdk = [[IDNowSDK alloc] init];
 
-void (^idnowResultListener)(enum IdentResult identResult, NSString * _Nonnull) =
-^(enum IdentResult result, NSString* message) {
-NSLog( @"SDK finished");
+void (^idnowResultListener)(enum IdentResult identResult, NSString * _Nonnull) = ^(enum IdentResult result, NSString* message) {
+    NSLog( @"SDK finished");
 
-if (result == IdentResultERROR) {
-// show result in debug log
-}
+    if (result == IdentResultERROR) {
+        // show result in debug log
+    }
 
-if( result == IdentResultFINISHED ) {
-// show result in debug log
-}
+    if( result == IdentResultFINISHED ) {
+        // show result in debug log
+    }
 };
 
 [sdk startWithToken:@"INTERNAL_TOKEN" preferredLanguage:@"en" fromViewController:self listener:idnowResultListener];
