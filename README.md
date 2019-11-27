@@ -92,6 +92,8 @@ carthage update --platform iOS
 $(SRCROOT)/Carthage/Build/iOS/IDNowSDKCore.framework
 $(SRCROOT)/Carthage/Build/iOS/Alamofire.framework
 $(SRCROOT)/Carthage/Build/iOS/Sentry.framework
+$(SRCROOT)/Carthage/Build/iOS/Starscream.framework
+
 ```  
 * Check the (Run Script only when installing)
 
