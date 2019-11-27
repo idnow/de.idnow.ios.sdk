@@ -161,6 +161,14 @@ void (^idnowResultListener)(enum IdentResult identResult, NSString * _Nonnull) =
 
 ## Changelog
 
+
+### 3.15.0  
+Changes:
+- user feedback in case the user is under age for the service
+- improved user feedback if the ID card is expired
+- Minor improvements & bugfixes
+
+
 ### 3.14.0  
 Changes:
 - Enhanced user experience in liveness detection and security feature steps
