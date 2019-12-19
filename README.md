@@ -120,6 +120,8 @@ public func start(token: String, preferredLanguage: String = default, fromViewCo
 
 * the token needs to be all uppercase character only and should conform to the following regular expression  `.{3}-.{5}$`
 * setting the prefferedLanguage (optional) tells the SDK in which language the AutoIdent UI should be shown. If the language is not available the framework first tries the language of the device and if that is not available it falls back to English.
+  These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czech), da (Danish), de (German), el (Greek), en (English), es (Spanish), et (Estonian), fi (Finnish), fr (French), hr (Croatian), hu (Hungarian), it (Italian), ja (Japanese), ka (Georgian), ko (Korean), lt (Lithuanian), lv (Latvian), nb (Norwegian), nl (Dutch), pl (Polish), pt (Portuguese), ro (Romanian), ru (Russian), sk (Slovak), sl (Slovenian), sr (Serbian), sv (Swedish), tr (Turkish), zh (Chinese).
+  
 * the calling view controller
 * an IDnowResultListener which gets called once the SDK returns. The possible return codes are:
 ** FINISHED the ident was finished
@@ -131,10 +133,15 @@ public func start(token: String, preferredLanguage: String = default, fromViewCo
 Swift
 
 ```
-IDNowSDK.shared.start(token: identId, fromViewController: viewController) { (result, message) in
-    print ("IDnow SDK finished with result: \(result)")
-    print ("IDnow SDK message: \(message)")
-}
+
+IDNowSDK.shared.start(token: token, preferredLanguage:"en", fromViewController: self, listener:{ (result: IDNowSDK.IdentResult, message: String) in
+           if result == IDNowSDK.IdentResult.ERROR {
+               self.showAlert(text: message)
+           } else if result == IDNowSDK.IdentResult.FINISHED {
+           
+           }
+       })
+
 ```
 
 Objective-C
@@ -158,7 +165,19 @@ void (^idnowResultListener)(enum IdentResult identResult, NSString * _Nonnull) =
 
 ```
 
+
+
 ## Changelog
+
+### 3.16.0  
+Changes:
+- added support for language selection
+- minor UI improvements and bugfixes
+
+### 3.15.1  
+Changes:
+- improved user feedback for liveness detection
+- Minor improvements & bugfixes
 
 
 ### 3.15.0  
