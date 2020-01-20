@@ -169,6 +169,10 @@ void (^idnowResultListener)(enum IdentResult identResult, NSString * _Nonnull) =
 
 ## Changelog
 
+### 3.17.0  
+Changes:
+- UI Improvements and bug fixes
+
 ### 3.16.0  
 Changes:
 - added support for language selection
