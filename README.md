@@ -54,6 +54,7 @@ end
 * Add the following to the Cartfile: (Xcode 10.2)
 ```
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_10.2.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
 github "daltoniam/Starscream"  "3.1.0"
@@ -61,6 +62,7 @@ github "daltoniam/Starscream"  "3.1.0"
 * Add the following to the Cartfile: (Xcode 11.1)
 ```
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.1.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
 github "daltoniam/Starscream"  "3.1.0"
@@ -68,6 +70,7 @@ github "daltoniam/Starscream"  "3.1.0"
 * Add the following to the Cartfile: (Xcode 11.2.1) 
 ```
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.2.1.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
 github "daltoniam/Starscream"  "3.1.0"
@@ -78,9 +81,8 @@ github "daltoniam/Starscream"  "3.1.0"
 carthage update --platform iOS
 ```
 
-* Drag the Frameworks needed (IDNowSDKCore.framework/ Alamofire.framework / Sentry.framework) from the Carthage/Build/iOS subfolder to ‘Linked Frameworks and Libraries’ (Target configuration -> General tab)
+* Drag the Frameworks needed (IDNowSDKCore.framework/ Alamofire.framework / Sentry.framework/opencv2.framework/Starscream.framework) from the Carthage/Build/iOS subfolder to ‘Linked Frameworks and Libraries’ (Target configuration -> General tab)
 
-* Make sure that under Build Settings that Framework Search Path includes $(PROJECT_DIR)/Carthage/Build/iOS 
 
 * Under Buid Phases tab, add a new Run Script Phase
 
@@ -93,14 +95,10 @@ $(SRCROOT)/Carthage/Build/iOS/Alamofire.framework
 $(SRCROOT)/Carthage/Build/iOS/Sentry.framework
 $(SRCROOT)/Carthage/Build/iOS/Starscream.framework
 
+
 ```  
-* Check the (Run Script only when installing)
 
-* Under Buid Phases tab, add a new Copy Files Phase
 
-* For destination select Frameworks
-
-* Drop the frameworks in the drop target, Make sure that Copy items if needed is checked, and also Code Sign On Copy is checked
 
 * Add NSCameraUsageDescription and NSPhotoLibraryUsageDescription keys in your app's .plist file 
 
