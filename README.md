@@ -35,10 +35,10 @@ github "daltoniam/Starscream"  "3.1.0"
 carthage update --platform iOS
 ```
 
-* Drag the Frameworks needed (IDNowSDKCore.framework/ Alamofire.framework / Sentry.framework/opencv2.framework/Starscream.framework) from the Carthage/Build/iOS subfolder to ‘Linked Frameworks and Libraries’ (Target configuration -> General tab)
+* Drag the Frameworks needed (IDNowSDKCore.framework/ Alamofire.framework / Sentry.framework/opencv2.framework/Starscream.framework) from the Carthage/Build/iOS subfolder to ‘Linked Frameworks and Libraries’ (Target configuration -> General tab). 
 
 
-* Under Buid Phases tab, add a new Run Script Phase
+* Under Buid Phases tab, add a new Run Script Phase.
 
 * In the Shell text field, type : /usr/local/bin/carthage copy-frameworks
 
