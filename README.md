@@ -1,7 +1,6 @@
 # Table of Contents
 - [IDnowCoreSDK framework](#IDnowCoreSDK-framework)
 - [Installation](#installation)
-  - [CocoaPods](#CocoaPods)
   - [Carthage ](#Carthage )
 - [Usage](#Usage)
 - [Usage example](#Usage-example)
@@ -12,40 +11,11 @@
 ## IDnowCoreSDK framework
 
 The IDnow framework can be used to incorporate the IDnow AutoIdent platform into iOS Objective C or Swift apps.
-The framework itself contains `armv7` and `arm64` architectures. Since Apple does not allow to include not used architectures  into an app this framework does not include the simulator architectures. If these are needed for development purposes please contact IDnow.
+The framework itself contains `armv7` and `arm64` architectures as well as simulator architectures.
 
 
 
 ## Installation
-
-### CocoaPods 
-
-The IDnow framework depends on the presence of several other frameworks. The current build tool used is `cocoapods`. That means in order to build an app using the framework it is necessary to add a podfile to the top-level folder of your app project. 
-#### Podfile used to build the current IDnow AutoIdent iOS app:
-
-```
-workspace 'AutoIdent.xcworkspace'
-platform :ios, '10.0'
-use_frameworks!
-
-target 'AutoIdent' do
-platform :ios, '10.0'
-pod 'Alamofire', '~> 4.7', :inhibit_warnings => true
-pod 'AlamofireLogger'
-pod 'Starscream', '3.1.0'
-pod 'OpenCV2', '~> 3.4.1'
-pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '4.1.0'
-pod 'lottie-ios'
-end
-```
-
-#### Using the framework
-
-* Put IDNowSDKCore.Framework in the app folder 
-* XCode -> Target -> General -> Embedded Frameworks and Libraries -> Add IDNowSDKCore.Framework
-* Insert SDK calling code in your app 
-* Add NSCameraUsageDescription and NSPhotoLibraryUsageDescription keys in your app's .plist file 
-* Compile & Run
 
 ### Carthage 
 
