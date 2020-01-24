@@ -20,26 +20,11 @@ The framework itself contains `armv7` and `arm64` architectures as well as simul
 ### Carthage 
 
 * Create a Cartfile 
-* Add the following to the Cartfile: (Xcode 10.2)
+
+* Add the following to the Cartfile: (Xcode 11.2.1 and above ) 
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_10.2.json"
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
-github "Alamofire/Alamofire" "4.8.2"
-github "getsentry/sentry-cocoa" "4.1.0"
-github "daltoniam/Starscream"  "3.1.0"
-```
-* Add the following to the Cartfile: (Xcode 11.1)
-```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.1.json"
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
-github "Alamofire/Alamofire" "4.8.2"
-github "getsentry/sentry-cocoa" "4.1.0"
-github "daltoniam/Starscream"  "3.1.0"
-```
-* Add the following to the Cartfile: (Xcode 11.2.1) 
-```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.2.1.json"
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
+github "idnow/de.idnow.ios.sdk" “TDF-Xcode_11.2.1"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/TwoDocumentsFlow/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
 github "daltoniam/Starscream"  "3.1.0"
