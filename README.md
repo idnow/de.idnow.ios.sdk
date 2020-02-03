@@ -51,7 +51,7 @@ end
 
 ### Carthage 
 
-[![Watch the video](https://github.com/idnow/de.idnow.ios.sdk/blob/BilelSelmiIDnow-patch-1/docs/ScreenShot_v2.png)](https://youtu.be/u3MGwwkMFc0)
+[![Watch the video](https://github.com/idnow/de.idnow.ios.sdk/blob/BilelSelmiIDnow-patch-1/docs/ScreenShot2.png)](https://youtu.be/u3MGwwkMFc0)
 
 * Create a Cartfile 
 * Add the following to the Cartfile: (Xcode 10.2)
