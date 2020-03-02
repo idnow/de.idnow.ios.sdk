@@ -1,5 +1,19 @@
 ## Changelog
 
+### 3.19.0  
+Changes:
+- integration of new animations to improve overall look and feel, as well as user experience
+- improvement of security feature detection
+- improvement of flows with multiple documents
+- multiple bug fixes
+
+### 3.18.0  
+Changes:
+- improvements in liveness detection
+- improvements in selfie step
+- visible Zone with MRZ check is also possible for one sided documents now
+- minor UI improvements and bugfixes
+
 ### 3.17.0  
 Changes:
 - UI Improvements and bug fixes
