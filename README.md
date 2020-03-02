@@ -54,14 +54,7 @@ end
 [![Watch the video](https://github.com/idnow/de.idnow.ios.sdk/blob/master/docs/ScreenShot2.png)](https://youtu.be/5UW1bHwpQy8)
 
 * Create a Cartfile 
-* Add the following to the Cartfile: (Xcode 10.2)
-```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode-10.2.json"
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
-github "Alamofire/Alamofire" "4.8.2"
-github "getsentry/sentry-cocoa" "4.1.0"
-github "daltoniam/Starscream"  "3.1.0"
-```
+
 * Add the following to the Cartfile: (Xcode 11.1)
 ```
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode-11.1.json"
@@ -73,6 +66,14 @@ github "daltoniam/Starscream"  "3.1.0"
 * Add the following to the Cartfile: (Xcode 11.2.1) 
 ```
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode-11.2.1.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
+github "Alamofire/Alamofire" "4.8.2"
+github "getsentry/sentry-cocoa" "4.1.0"
+github "daltoniam/Starscream"  "3.1.0"
+```
+* Add the following to the Cartfile: (Xcode 11.3.1)
+```
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode-11.3.1.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
