@@ -1,5 +1,13 @@
 ## Changelog
 
+### 3.20.0  
+Changes:
+- Icons and animations are now configurable per customer
+- Added possibility to let user take the selfie himself if configured
+- Integrated new liveness version
+- Fixed crashes during selfie step
+- Minor bug fixes and performance improvements
+
 ### 3.19.0  
 Changes:
 - integration of new animations to improve overall look and feel, as well as user experience
