@@ -1,5 +1,10 @@
 ## Changelog
 
+### 3.20.1
+Changes:
+-  Fonts are now configurable per customer
+- Minor bug fixes and performance improvements
+
 ### 3.20.0  
 Changes:
 - Icons and animations are now configurable per customer
