@@ -1,5 +1,9 @@
 ## Changelog
 
+### 3.20.2
+Changes:
+-  Fixed a bug within our Liveness check
+
 ### 3.20.1
 Changes:
 -  Fonts are now configurable per customer
