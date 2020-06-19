@@ -77,7 +77,7 @@ github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
 github "daltoniam/Starscream"  "3.1.0"
 ```
-* Add the following to the Cartfile: (Xcode 11.4.1)
+* Add the following to the Cartfile: (Xcode 11.6)
 ```
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.6.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
@@ -85,14 +85,7 @@ github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
 github "daltoniam/Starscream"  "3.1.0"
 ```
-* Add the following to the Cartfile: (Xcode 11.5)
-```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.5.json"
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
-github "Alamofire/Alamofire" "4.8.2"
-github "getsentry/sentry-cocoa" "4.1.0"
-github "daltoniam/Starscream"  "3.1.0"
-```
+
 
 * Run:
 ```
