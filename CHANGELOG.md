@@ -1,5 +1,12 @@
 ## Changelog
 
+### 3.21.0
+Changes:
+- New liveness detection service
+- Redesigned UI and UX
+- Support for paper-based driver's license
+- Various bug fixes
+
 ### 3.20.2
 Changes:
 -  Fixed a bug within our Liveness check
