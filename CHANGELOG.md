@@ -1,5 +1,11 @@
 ## Changelog
 
+### 3.21.0
+Changes:
+-  Redesigned UI and UX
+-  Support for Paper-based driver's license
+-  Various bug fixes
+
 ### 3.20.2
 Changes:
 -  Fixed a bug within our Liveness check
