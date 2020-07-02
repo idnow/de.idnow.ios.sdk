@@ -1,5 +1,10 @@
 ## Changelog
 
+### 3.22.0
+Changes:
+-  Support for paper-based ID Cards and Residence Permits
+-  Various bug fixes
+
 ### 3.21.0
 Changes:
 -  Redesigned UI and UX

@@ -38,11 +38,19 @@ pod 'OpenCV2', '~> 3.4.1'
 pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '4.1.0'
 end
 ```
+Other than the above pods, we are using a new Liveness technology, therefore The IDnow framework is also dependent on the presence of  ZoomAuthentication.framework. 
+
+Downlaod the framework : 
+
+```
+https://downloads.idnow.de/ios/ZoomAuthentication.framework.zip
+
+```
 
 #### Using the framework
 
-* Put IDNowSDKCore.Framework in the app folder 
-* XCode -> Target -> General -> Embedded Frameworks and Libraries -> Add IDNowSDKCore.Framework
+* Put IDNowSDKCore.Framework in the app folder as well as ZoomAuthentication.framework
+* XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add IDNowSDKCore.Framework and ZoomAuthentication.framework, check Embed and Sign for both
 * Insert SDK calling code in your app 
 * Add NSCameraUsageDescription and NSPhotoLibraryUsageDescription keys in your app's .plist file 
 * Compile & Run
@@ -53,17 +61,19 @@ end
 
 * Create a Cartfile 
 
-* Add the following to the Cartfile: (Xcode 11.3.1)
+* Add the following to the Cartfile: (Xcode 11.3)
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.3.1.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-iOS-11.3.json"
+binary "https://downloads.idnow.de/ios/ZoomAuthentication.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
 github "daltoniam/Starscream"  "3.1.0"
 ```
-* Add the following to the Cartfile: (Xcode 11.4.1) 
+* Add the following to the Cartfile: (Xcode 11.4) 
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.4.1.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-iOS-11.4.json"
+binary "https://downloads.idnow.de/ios/ZoomAuthentication.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
@@ -71,7 +81,8 @@ github "daltoniam/Starscream"  "3.1.0"
 ```
 * Add the following to the Cartfile: (Xcode 11.5)
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.5.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-iOS-11.5.json"
+binary "https://downloads.idnow.de/ios/ZoomAuthentication.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
@@ -79,7 +90,8 @@ github "daltoniam/Starscream"  "3.1.0"
 ```
 * Add the following to the Cartfile: (Xcode 11.6)
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore-Xcode_11.6.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-iOS-11.6.json"
+binary "https://downloads.idnow.de/ios/ZoomAuthentication.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
 github "getsentry/sentry-cocoa" "4.1.0"
@@ -92,7 +104,7 @@ github "daltoniam/Starscream"  "3.1.0"
 carthage update --platform iOS
 ```
 
-* Drag the Frameworks needed (IDNowSDKCore.framework/ Alamofire.framework / Sentry.framework/opencv2.framework/Starscream.framework) from the Carthage/Build/iOS subfolder to ‘Linked Frameworks and Libraries’ (Target configuration -> General tab)
+* Drag the Frameworks needed (IDNowSDKCore.framework/ Alamofire.framework / Sentry.framework/opencv2.framework/Starscream.framework/ZoomAuthentication.framework) from the Carthage/Build/iOS subfolder to ‘Linked Frameworks and Libraries’ (Target configuration -> General tab)
 
 
 * Under Buid Phases tab, add a new Run Script Phase
@@ -105,7 +117,7 @@ $(SRCROOT)/Carthage/Build/iOS/IDNowSDKCore.framework
 $(SRCROOT)/Carthage/Build/iOS/Alamofire.framework
 $(SRCROOT)/Carthage/Build/iOS/Sentry.framework
 $(SRCROOT)/Carthage/Build/iOS/Starscream.framework
-
+$(SRCROOT)/Carthage/Build/iOS/ZoomAuthentication.framework
 
 ```  
 
