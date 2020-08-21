@@ -90,7 +90,7 @@ github "daltoniam/Starscream"  "3.1.0"
 ```
 * Add the following to the Cartfile: (Xcode 11.6)
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-iOS_11.6.json.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-iOS_11.6.json"
 binary "https://downloads.idnow.de/ios/ZoomAuthentication.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
