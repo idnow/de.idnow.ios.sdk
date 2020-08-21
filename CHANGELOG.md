@@ -1,5 +1,14 @@
 ## Changelog
 
+### 3.23.0
+Changes:
+-  Option to manually take pictures of documents
+-  Option for users to specify a reason when cancelling
+-  New UX design for document selection
+-  User feedback improvements
+-  Language translation updates
+-  Various Bug fixes
+
 ### 3.22.0
 Changes:
 -  Support for paper-based ID Cards and Residence Permits

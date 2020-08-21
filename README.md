@@ -63,7 +63,7 @@ https://downloads.idnow.de/ios/ZoomAuthentication.framework.zip
 
 * Add the following to the Cartfile: (Xcode 11.3)
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-iOS-11.3.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-iOS_11.3.json"
 binary "https://downloads.idnow.de/ios/ZoomAuthentication.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
@@ -72,7 +72,7 @@ github "daltoniam/Starscream"  "3.1.0"
 ```
 * Add the following to the Cartfile: (Xcode 11.4) 
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-iOS-11.4.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-iOS_11.4.json"
 binary "https://downloads.idnow.de/ios/ZoomAuthentication.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
@@ -81,7 +81,7 @@ github "daltoniam/Starscream"  "3.1.0"
 ```
 * Add the following to the Cartfile: (Xcode 11.5)
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-iOS-11.5.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-iOS_11.5.json"
 binary "https://downloads.idnow.de/ios/ZoomAuthentication.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
@@ -90,7 +90,7 @@ github "daltoniam/Starscream"  "3.1.0"
 ```
 * Add the following to the Cartfile: (Xcode 11.6)
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-11.6.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNow-iOS_11.6.json.json"
 binary "https://downloads.idnow.de/ios/ZoomAuthentication.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "Alamofire/Alamofire" "4.8.2"
