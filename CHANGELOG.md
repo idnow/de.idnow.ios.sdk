@@ -1,5 +1,16 @@
 ## Changelog
 
+### 4.3.0
+Changes:
+-  Added support iOS 14
+-  Improved customization options
+-  Updated translations
+-  Redesigned UX on some screens
+-  Internalized some dependencies
+-  Updated 'Liveness' solution
+-  Library built for distribution
+-  Various Bug fixes
+
 ### 3.23.1
 Changes:
 -  Option to manually take pictures of documents
