@@ -61,7 +61,7 @@ https://downloads.idnow.de/ios/ZoomAuthentication.framework.zip
 
 * Add the following to the Cartfile: 
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDKCore.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDK.json"
 binary "https://downloads.idnow.de/ios/ZoomAuthentication.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "getsentry/sentry-cocoa" "4.1.0"
