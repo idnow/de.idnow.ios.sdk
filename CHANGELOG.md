@@ -1,5 +1,10 @@
 ## Changelog
 
+### 4.5.0
+Changes:
+-  UX improvements
+-  Various bugfixes
+
 ### 4.3.0
 Changes:
 -  Added support iOS 14
