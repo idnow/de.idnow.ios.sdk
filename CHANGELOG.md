@@ -1,5 +1,12 @@
 ## Changelog
 
+### 4.6.0
+Changes:
+-  Fixes for additional document process
+-  Improvements to the document scanning process
+-  UI improvements and bug fixes
+-  Several bug fixes
+
 ### 4.5.0
 Changes:
 -  UX improvements
