@@ -75,7 +75,7 @@ github "getsentry/sentry-cocoa" "4.1.0"
 carthage update --platform iOS
 ```
 
-* Drag the Frameworks needed (IDNowSDKCore.framework /  Sentry.framework/opencv2.framework/ZoomAuthentication.framework) from the Carthage/Build/iOS subfolder to ‘Linked Frameworks and Libraries’ (Target configuration -> General tab)
+* XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add  the Frameworks needed (IDNowSDKCore.framework /Sentry.framework /opencv2.framework /ZoomAuthentication.framework) from the Carthage/Build/iOS subfolder. 
 
 
 * Under Buid Phases tab, add a new Run Script Phase
