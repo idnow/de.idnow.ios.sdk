@@ -41,14 +41,14 @@ Other than the above pods, we are using a new Liveness technology, therefore The
 Downlaod the framework : 
 
 ```
-https://downloads.idnow.de/ios/ZoomAuthentication.framework.zip
+https://downloads.idnow.de/ios/FaceTecSDK.framework.zip
 
 ```
 
 #### Using the framework
 
-* Put IDNowSDKCore.Framework in the app folder as well as ZoomAuthentication.framework
-* XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add IDNowSDKCore.Framework and ZoomAuthentication.framework, check Embed and Sign for both
+* Put IDNowSDKCore.Framework in the app folder as well as FaceTecSDK.framework
+* XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add IDNowSDKCore.Framework and FaceTecSDK.framework, check Embed and Sign for both
 * Insert SDK calling code in your app 
 * Add NSCameraUsageDescription and NSPhotoLibraryUsageDescription keys in your app's .plist file 
 * Compile & Run
@@ -61,8 +61,8 @@ https://downloads.idnow.de/ios/ZoomAuthentication.framework.zip
 
 * Add the following to the Cartfile: 
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDK_4.6.0.json"
-binary "https://downloads.idnow.de/ios/ZoomAuthentication.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDK_4.7.0.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/FaceTec.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "getsentry/sentry-cocoa" "4.1.0"
 
@@ -75,7 +75,7 @@ github "getsentry/sentry-cocoa" "4.1.0"
 carthage update --platform iOS
 ```
 
-* XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add  the Frameworks needed (IDNowSDKCore.framework /Sentry.framework /opencv2.framework /ZoomAuthentication.framework) from the Carthage/Build/iOS subfolder. 
+* XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add  the Frameworks needed (IDNowSDKCore.framework /Sentry.framework /opencv2.framework /FaceTecSDK.framework) from the Carthage/Build/iOS subfolder. 
 
 
 * Under Buid Phases tab, add a new Run Script Phase
@@ -86,7 +86,7 @@ carthage update --platform iOS
 ```
 $(SRCROOT)/Carthage/Build/iOS/IDNowSDKCore.framework
 $(SRCROOT)/Carthage/Build/iOS/Sentry.framework
-$(SRCROOT)/Carthage/Build/iOS/ZoomAuthentication.framework
+$(SRCROOT)/Carthage/Build/iOS/FaceTecSDK.framework
 
 ```  
 

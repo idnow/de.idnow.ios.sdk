@@ -1,5 +1,11 @@
 ## Changelog
 
+### 4.7.0
+Changes:
+-  User feedback improvements
+-  Stability and performance improvements
+-  Various bug fixes
+
 ### 4.6.0
 Changes:
 -  Fixes for additional document process
