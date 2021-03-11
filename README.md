@@ -12,8 +12,6 @@
 ## IDnowCoreSDK framework
 
 The IDnow framework can be used to incorporate the IDnow AutoIdent platform into iOS Objective C or Swift apps.
-The framework itself contains `armv7` and `arm64` architectures. Since Apple does not allow to include not used architectures  into an app this framework does not include the simulator architectures. If these are needed for development purposes please contact IDnow.
-
 
 
 ## Installation
@@ -36,7 +34,7 @@ pod 'OpenCV2', '~> 3.4.1'
 pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '4.1.0'
 end
 ```
-Other than the above pods, we are using a new Liveness technology, therefore The IDnow framework is also dependent on the presence of  ZoomAuthentication.framework. 
+Other than the above pods, we are using a new Liveness technology, therefore The IDnow framework is also dependent on the presence of  FaceTecSDK.framework. 
 
 Downlaod the framework : 
 
@@ -61,7 +59,7 @@ https://downloads.idnow.de/ios/FaceTecSDK.framework.zip
 
 * Add the following to the Cartfile: 
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDK_4.7.0.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDK_4.7.2.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/FaceTec.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "getsentry/sentry-cocoa" "4.1.0"

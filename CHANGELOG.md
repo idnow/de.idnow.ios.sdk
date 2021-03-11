@@ -1,5 +1,11 @@
 ## Changelog
 
+### 4.7.2
+Changes:
+-  UI optimizations
+-  Stability and performance improvements
+-  Bug fixes
+
 ### 4.7.0
 Changes:
 -  User feedback improvements
