@@ -59,7 +59,7 @@ https://downloads.idnow.de/ios/FaceTecSDK.framework.zip
 
 * Add the following to the Cartfile: 
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDK_4.8.1.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDK-4.8.1.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/FaceTec.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
 github "getsentry/sentry-cocoa" "4.1.0"

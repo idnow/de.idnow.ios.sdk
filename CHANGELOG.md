@@ -2,7 +2,6 @@
 
 ### 4.8.1
 Changes:
--  Performance improvements
 -  Bug fixes
 
 ### 4.8.0
