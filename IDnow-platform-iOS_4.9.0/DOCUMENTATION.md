@@ -1,4 +1,4 @@
-## IDnowCoreSDK framework  (4.8.1)
+## IDnowCoreSDK framework  (4.9.0)
 The IDnow framework can be used to incorporate the IDnow AutoIdent platform into iOS Objective C or Swift apps. The framework itself contains `armv7` and `arm64` architectures as well as simulator architectures.
 
 

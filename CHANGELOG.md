@@ -1,5 +1,10 @@
 ## Changelog
 
+### 4.9.0
+Changes:
+-  Enhancement of the feedback provided when scanning a document
+-  Bug fixes
+
 ### 4.8.1
 Changes:
 -  Bug fixes
