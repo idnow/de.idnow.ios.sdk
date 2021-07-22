@@ -31,7 +31,6 @@ use_frameworks!
 target 'AutoIdent' do
 platform :ios, '10.0'
 pod 'OpenCV2', '~> 3.4.1'
-pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '4.1.0'
 end
 ```
 Other than the above pods, we are using a new Liveness technology, therefore The IDnow framework is also dependent on the presence of  FaceTecSDK.framework. 
@@ -59,10 +58,9 @@ https://downloads.idnow.de/ios/FaceTecSDK.framework.zip
 
 * Add the following to the Cartfile: 
 ```
-binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDK_4.9.0.json"
+binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/IDNowSDK_4.10.0.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/FaceTec.json"
 binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.json"
-github "getsentry/sentry-cocoa" "4.1.0"
 
 ```
 
@@ -71,9 +69,10 @@ github "getsentry/sentry-cocoa" "4.1.0"
 * Run:
 ```
 carthage update --platform iOS
+
 ```
 
-* XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add  the Frameworks needed (IDNowSDKCore.framework /Sentry.framework /opencv2.framework /FaceTecSDK.framework) from the Carthage/Build/iOS subfolder. 
+* XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add  the Frameworks needed (IDNowSDKCore.framework /opencv2.framework /FaceTecSDK.framework) from the Carthage/Build/iOS subfolder. 
 
 
 * Under Buid Phases tab, add a new Run Script Phase
@@ -83,7 +82,6 @@ carthage update --platform iOS
 * Under Input Files add: 
 ```
 $(SRCROOT)/Carthage/Build/iOS/IDNowSDKCore.framework
-$(SRCROOT)/Carthage/Build/iOS/Sentry.framework
 $(SRCROOT)/Carthage/Build/iOS/FaceTecSDK.framework
 
 ```  

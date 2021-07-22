@@ -1,5 +1,11 @@
 ## Changelog
 
+### 4.10.0
+Changes:
+-  Support for 3 new languages: Arabic, Punjabi & Gujarati
+-  Enhancement of the feedback provided when scanning a document
+-  Bug fixes
+
 ### 4.9.0
 Changes:
 -  Enhancement of the feedback provided when scanning a document

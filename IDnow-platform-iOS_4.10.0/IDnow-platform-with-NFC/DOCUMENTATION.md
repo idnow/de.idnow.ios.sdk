@@ -1,4 +1,4 @@
-## IDnowCoreSDK framework with NFC  (4.9.0)
+## IDnowCoreSDK framework with NFC  (4.10.0)
 The IDnow framework can be used to incorporate the IDnow AutoIdent platform into iOS Objective C or Swift apps. 
 
 #### This version of IDnowCoreSDK is dependent on the presence of ReadID frameworks.
@@ -23,7 +23,6 @@ use_frameworks!
 target 'AutoIdent' do
 platform :ios, '10.0'
 pod 'OpenCV2', '~> 3.4.1'
-pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '4.1.0'
 end
 ```
 Other than the above pods, The IDnow framework is dependent on the presence of FaceTecSDK.framework
@@ -40,7 +39,7 @@ The IDnow framework is also dependent on the presence of ReadID_UI.xcframework a
 
 * Put IDNowSDKCore.Framework,  FaceTecSDK.framework, ReadID_UI.xcframework and ReadID.xcframework in the app folder
 * XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add IDNowSDKCore.Framework, FaceTecSDK.framework, ReadID_UI.xcframework and ReadID.xcframework  and check Embed and Sign.
-* Go to Pods, then under Targets look for OpenCV2 and Sentry, under Build Settings set Build Libraries for Distribution for the pods to Yes, Otherwise you’ll get dyld: Symbol not found error at runtime.
+* Go to Pods, then under Targets look for OpenCV2, under Build Settings set Build Libraries for Distribution for the pods to Yes, Otherwise you’ll get dyld: Symbol not found error at runtime.
 * On the Signing & Capabilities configuration tab add the Capability ‘Near Field Communication Tag Reading’
 * Add ‘NFCReaderUsageDescription’ to your App’s Info.plist file 
 * Copy the snippet below into your App’s Info.plist file 
