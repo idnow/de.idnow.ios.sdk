@@ -8,6 +8,7 @@ Changes:
 
 ### 4.9.0
 Changes:
+-  E-Documents scanning via NFC (as optional feature), please contact IDnow for more info
 -  Enhancement of the feedback provided when scanning a document
 -  Bug fixes
 
