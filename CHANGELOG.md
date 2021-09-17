@@ -1,5 +1,11 @@
 ## Changelog
 
+### 4.11.0
+Changes:
+-  New eSigning feature 
+-  Enhanced support for customizing app animations 
+-  Bug fixes
+
 ### 4.10.0
 Changes:
 -  Support for 3 new languages: Arabic, Punjabi & Gujarati

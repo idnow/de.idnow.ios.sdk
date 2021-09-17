@@ -1,5 +1,5 @@
-## IDnowCoreSDK framework without NFC  (4.10.0) :
-The IDnow framework can be used to incorporate the IDnow AutoIdent platform into iOS Objective C or Swift apps. The framework itself contains `armv7` and `arm64` architectures as well as simulator architectures.
+## IDnowCoreSDK framework without NFC  (4.11.0) :
+The IDnow framework can be used to incorporate the IDnow AutoIdent platform into iOS Objective C or Swift apps. 
 
 
 ### Dependencies
