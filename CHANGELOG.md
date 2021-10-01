@@ -2,6 +2,12 @@
 
 ### 4.11.0
 Changes:
+-  Bank Transfer feature 
+-  Several improvements and optimizations
+-  Bug fixes
+
+### 4.11.0
+Changes:
 -  New eSigning feature 
 -  Enhanced support for customizing app animations 
 -  Bug fixes

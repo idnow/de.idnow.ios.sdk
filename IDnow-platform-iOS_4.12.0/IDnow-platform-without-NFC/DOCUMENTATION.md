@@ -1,4 +1,4 @@
-## IDnowCoreSDK framework without NFC  (4.11.0) :
+## IDnowCoreSDK framework without NFC  (4.12.0) :
 The IDnow framework can be used to incorporate the IDnow AutoIdent platform into iOS Objective C or Swift apps. 
 
 
