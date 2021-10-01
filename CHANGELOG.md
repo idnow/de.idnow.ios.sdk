@@ -1,6 +1,6 @@
 ## Changelog
 
-### 4.11.0
+### 4.12.0
 Changes:
 -  Bank Transfer feature 
 -  Several improvements and optimizations
