@@ -29,13 +29,13 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'AutoIdent' do
-platform :ios, '10.0'
-pod 'OpenCV2', '~> 3.4.1'
+  platform :ios, '10.0'
+  pod 'OpenCV2', '~> 3.4.1'
 end
 ```
 Other than the above pods, we are using a new Liveness technology, therefore The IDnow framework is also dependent on the presence of  FaceTecSDK.framework. 
 
-Downlaod the framework : 
+Download the framework : 
 
 ```
 https://downloads.idnow.de/ios/FaceTecSDK.framework.zip
@@ -69,7 +69,6 @@ binary "https://raw.githubusercontent.com/idnow/de.idnow.ios.sdk/master/OpenCV2.
 * Run:
 ```
 carthage update --platform iOS
-
 ```
 
 * XCode -> Target -> General -> Frameworks, Libraries and Embedded Content -> Add  the Frameworks needed (IDNowSDKCore.framework /opencv2.framework /FaceTecSDK.framework) from the Carthage/Build/iOS subfolder. 
@@ -83,7 +82,6 @@ carthage update --platform iOS
 ```
 $(SRCROOT)/Carthage/Build/iOS/IDNowSDKCore.framework
 $(SRCROOT)/Carthage/Build/iOS/FaceTecSDK.framework
-
 ```  
 
 
@@ -104,8 +102,8 @@ The API to start an automated Ident is:
 public func start(token: String, preferredLanguage: String = default, fromViewController: UIViewController, listener: @escaping IDNowSDKResultListener)
 ```
 
-* the token needs to be all uppercase character only and should conform to the following regular expression  `.{3}-.{5}$`
-* setting the prefferedLanguage (optional) tells the SDK in which language the AutoIdent UI should be shown. If the language is not available the framework first tries the language of the device and if that is not available it falls back to English.
+* The token needs to be all uppercase character only and should conform to the following regular expression  `.{3}-.{5}$`
+* Setting the prefferedLanguage (optional) tells the SDK in which language the AutoIdent UI should be shown. If the language is not available the framework first tries the language of the device and if that is not available it falls back to English.
   These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czech), da (Danish), de (German), el (Greek), en (English), es (Spanish), et (Estonian), fi (Finnish), fr (French), hr (Croatian), hu (Hungarian), it (Italian), ja (Japanese), ka (Georgian), ko (Korean), lt (Lithuanian), lv (Latvian), nb (Norwegian), nl (Dutch), pl (Polish), pt (Portuguese), ro (Romanian), ru (Russian), sk (Slovak), sl (Slovenian), sr (Serbian), sv (Swedish), tr (Turkish), zh (Chinese).
   
 * the calling view controller
@@ -121,12 +119,12 @@ Swift
 ```
 
 IDNowSDK.shared.start(token: token, preferredLanguage:"en", fromViewController: self, listener:{ (result: IDNowSDK.IdentResult, message: String) in
-           if result == IDNowSDK.IdentResult.ERROR {
-               self.showAlert(text: message)
-           } else if result == IDNowSDK.IdentResult.FINISHED {
-           
-           }
-       })
+   if result == IDNowSDK.IdentResult.ERROR {
+       self.showAlert(text: message)
+   } else if result == IDNowSDK.IdentResult.FINISHED {
+
+   }
+})
 
 ```
 
