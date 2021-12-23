@@ -1,5 +1,10 @@
 ## Changelog
 
+### 4.14.0
+Changes:
+-  Several improvements and optimizations
+-  Bug fixes
+
 ### 4.13.0
 Changes:
 -  Improved bank transfer and esigning
