@@ -1,3 +1,14 @@
+# :package: Swift Package Manager :package:
+
+Since SDK version 4.15.0 (Xcode 13.2) we added support for swift package manager by providing the corresponding xcframeworks as binary targets. To integrate via Swift Package Manager please open the repository link and follow the instructions of the documentation:
+
+[https://github.com/idnow/de.idnow.ios.sdk.spm](https://github.com/idnow/de.idnow.ios.sdk.spm) :package:
+
+<br>
+
+In case you use the fat framework (SDK version <= 4.14.0) you can follow the instructions below or directly in the documentation of the chosen SDK folder.
+
+
 # Table of Contents
 - [IDnowCoreSDK framework](#IDnowCoreSDK-framework)
 - [Installation](#installation)
